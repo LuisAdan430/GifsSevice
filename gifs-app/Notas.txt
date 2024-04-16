@@ -6,3 +6,4 @@
 # Dia 12/04/2024 no se realizaron cambios por diagramadas de santander
 # Dia 13/07/2024 no se realizaron  cambios por diagramadas de santander
 # Dia 14/07/2024 se  realizaron cambios en el servidor
+# Dia 15/07/2024 Aun no se termina la realizacion del diagrama de flujo de santander 46/63
