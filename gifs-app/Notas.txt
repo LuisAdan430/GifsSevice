@@ -8,3 +8,4 @@
 # Dia 14/07/2024 se  realizaron cambios en el servidor
 # Dia 15/07/2024 Aun no se termina la realizacion del diagrama de flujo de santander 46/63
 # Dia 16/07/2024 Aun no se termina la realizacion del diagrama de flujo de santander 60/63
+# Dia 17/08/2024 Se termina diagrama de flujo de santander [ Manual Proceso de liberacion de aplicaciones en IIQ ]
