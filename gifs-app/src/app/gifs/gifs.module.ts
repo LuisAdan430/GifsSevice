@@ -6,6 +6,8 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
 import { CardListComponent } from './components/card-list/card-list.component';
 import { CardComponent } from './components/card/card.component';
 
+import { SharedModule } from '../shared/shared.module';
+
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { CardComponent } from './components/card/card.component';
     CardComponent
   ],
   imports: [
-    CommonModule
+    // Se importa el modulo de shared trayendo consigo los componentes que esten dentro
+    CommonModule,
+    SharedModule
   ],
   exports:[
     HomePageComponent
