@@ -10,3 +10,4 @@
 # Dia 16/07/2024 Aun no se termina la realizacion del diagrama de flujo de santander 60/63
 # Dia 17/08/2024 Se termina diagrama de flujo de santander [ Manual Proceso de liberacion de aplicaciones en IIQ ]
 # Dia 18/08/2024 Sin cambios por induccion en santander
+# sin cambios
