@@ -1,15 +1,36 @@
+  <!-- Se agregan las funciones de bootstrap
+  text- center : Centra los textos
+  bg-dark: Hace que el background sea negro o en pocas palabras que el fondo sea negro
+  -->
+  <div class=" card mb-2 text-center bg-dark text-center">
 
-  <div class=" card mb-2 text-center bg-dark">
+    <!--
+      De este forma se importa o se ocupa el modulo,
+      para mandarle los datos a ts de lazy-image.component.ts es necesario colocar
+      entre corchetes el nombre de las variables y los datos que necesia dentro
+      en el caso de url mando la url de la imagen
+      Se coloca la funcion tuberia para que si no viene el nombre del gif se coloque como
+      No name
+    -->
+    <shared-lazy-image
+    [url]="gif.images.downsized_medium.url"
+    [alt]="gif.title || 'No name' "
+    ></shared-lazy-image>
     <!--
     <img
-    [src]="gif.images.downsized_medium.url"
+    [src]=""
     [alt]="gif.title "
     class="card-img-top"
     > -->
 
     <div class="card-body text-white">
       <p class="card-text">
-        {{ gif.title}}
+        <!-- En el siguiente codigo viene que si el titulo viene vacio se quede vacio -->
+        <!--{{ gif.title}}-->
+        <!-- En el siguiente codigo se agrega la funcion tuberia agregando los signos || donde si no viene
+          el titulo  se coloca no title-->
+          {{ gif.title || 'No title'}}
+
       </p>
     </div>
 

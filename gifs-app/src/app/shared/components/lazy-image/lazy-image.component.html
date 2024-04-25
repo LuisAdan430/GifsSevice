@@ -1,1 +1,35 @@
-<p>lazy-image works!</p>
+<!--
+  En este apartado se declara el div que contendra las imagenes
+  este archivo HTML hace uso de Boostrap
+-->
+
+<div class="d-flex justify-content-center">
+
+
+  <!--
+    Se crea la imagen donde se llaman las variables para su uso
+    url y alt que vienen del ts  de lazy-image-component.ts
+    que a su vez es un componente que es utilizado por otro
+   -->
+  <!--
+  <img
+  [src]="url"
+  [alt]="alt"
+  class="card-img-top"
+  />
+  -->
+  <!--
+    Se creo un Louder dando en el siguiente link
+    https://samherbert.net/svg-loaders/
+    pasos para descargarlo nos dirigimos al final de la pantalla donde dice download de ahi nos redirige
+    a git donde le daremos en la carpeta [ SVG- loaders] a continuacion nos metemos en el archivo que
+    deseamos de loader nos colocaa el ejemplo le damos donde esta el lapicito y nos pedira que hagamos un fort
+    le damos ahi y nos dirige al codigo copiamos ese codigo .
+    A continuacion nos dirigimos a la carpeta assets de nuestro proyecto creacion un archivo llamado loader.svg
+    y pegamos el codigo de esta forma creamos un loader mas liviano que un gif.
+
+    creamos la etiqueta imagen y nos redigimos al loader colocamos la carpeta assets y adentro ponemos el nombre
+    del documento
+   -->
+  <img src="assets/loader.svg" />
+</div>
