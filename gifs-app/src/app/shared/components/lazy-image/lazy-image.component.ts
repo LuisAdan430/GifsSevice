@@ -25,6 +25,9 @@ export class LazyImageComponent implements OnInit{
   @Input()
   public alt: string = '';
 
+  public hasLoaded: boolean = false;
+
+
   /*
     Se crear el metodo ngOnInit() para poder ocuparlo recordar que se debe implementar el onInit en la clase
     el metodo no regresa nada por ahora , primero que nada valida que el url no se encuentre vacia
@@ -33,6 +36,15 @@ export class LazyImageComponent implements OnInit{
   */
   ngOnInit(): void {
       if(!this.url) throw new Error ('URL property is required');
+  }
+
+  onLoad(){
+    setTimeout(() => {
+      this.hasLoaded = true;
+    },1000);
+
+    //console.log('Image loader');
+    //this.hasLoaded = true;
   }
 
 }

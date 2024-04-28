@@ -11,13 +11,15 @@
     url y alt que vienen del ts  de lazy-image-component.ts
     que a su vez es un componente que es utilizado por otro
    -->
-  <!--
+
   <img
   [src]="url"
   [alt]="alt"
-  class="card-img-top"
-  />
-  -->
+  class="card-img-top animate__animated animate__faceIn"
+  (load)="onLoad()"
+  [ngStyle]="{display: hasLoaded ? '' : 'none'}"
+  >
+
   <!--
     Se creo un Louder dando en el siguiente link
     https://samherbert.net/svg-loaders/
@@ -31,5 +33,12 @@
     creamos la etiqueta imagen y nos redigimos al loader colocamos la carpeta assets y adentro ponemos el nombre
     del documento
    -->
-  <img src="assets/loader.svg" />
+  <img
+  *ngIf="!hasLoaded"
+  src="assets/loader.svg"
+  height="35"
+  width="35"
+  class="mt-3"
+
+  />
 </div>
